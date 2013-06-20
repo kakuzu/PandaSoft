@@ -85,6 +85,7 @@ class Config extends Object {
 
     /**
      * Löscht einzelne Einstellungen in der Aktuellen Konfiguration.
+     * 
      * @param type $var
      */
     public static function delete($var = null)
