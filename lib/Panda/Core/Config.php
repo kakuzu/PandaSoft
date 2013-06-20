@@ -91,11 +91,11 @@ class Config extends Object {
     {
         $keys = explode('.', $var);
         $last = array_pop($keys);
-        $pointer = &static::$_settings;
+        $settings = &static::$_settings;
         foreach ($keys as $key) {
-            $pointer = &$pointer[$key];
+            $settings = &$settings[$key];
         }
-        unset($pointer[$last]);
+        unset($settings[$last]);
     }
 
 }
