@@ -12,7 +12,7 @@
  * @copyright (c) 2013, FoxyNet
  * @link      http://board.foxynet.de PandaSoft Support Forum
  * @version   ::VERSION::
- * @package   Panda
+ * @package   Panda.Interfaces
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
@@ -22,6 +22,7 @@ namespace Panda\Interfaces;
  * Interface Equatable
  *
  * @version ::VERSION::
+ * @package   Panda.Interfaces
  */
 interface Equatable {
 

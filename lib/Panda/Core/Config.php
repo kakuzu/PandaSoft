@@ -12,7 +12,7 @@
  * @copyright (c) 2013, FoxyNet
  * @link      http://board.foxynet.de PandaSoft Support Forum
  * @version   0.1-dev
- * @package   Panda
+ * @package   Panda.Core
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
@@ -22,6 +22,7 @@ namespace Panda\Core;
  * Config | Einstellungen des Frameworks speichern, lesen, löschen.
  *
  * @version ::VERSION::
+ * @package Panda.Core
  */
 class Config extends Object {
 
@@ -85,7 +86,7 @@ class Config extends Object {
 
     /**
      * Löscht einzelne Einstellungen in der Aktuellen Konfiguration.
-     * 
+     *
      * @param type $var
      */
     public static function delete($var = null)
