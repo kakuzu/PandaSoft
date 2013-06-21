@@ -11,8 +11,17 @@
  *
  * @copyright (c) 2013, FoxyNet
  * @link      http://board.foxynet.de PandaSoft Support Forum
- * @version   0.1-dev
- * @package   App.webroot
+ * @version   ::VERSION::
+ * @package   Panda
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
-require dirname(__DIR__) . '/Config/bootstrap.php';
+
+namespace Panda;
+
+require PANDA . 'shared.php';
+
+if (!class_exists('Panda\Core\Config')) {
+    require PANDA . 'Core' . DS . 'Autoloader.php';
+    $loader = new \Panda\Core\Autoloader('Panda', CORE_PATH);
+    $loader->register();
+}

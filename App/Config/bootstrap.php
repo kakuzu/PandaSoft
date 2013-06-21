@@ -11,8 +11,18 @@
  *
  * @copyright (c) 2013, FoxyNet
  * @link      http://board.foxynet.de PandaSoft Support Forum
- * @version   0.1-dev
- * @package   App.webroot
+ * @version   ::VERSION::
+ * @package   App.config
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
-require dirname(__DIR__) . '/Config/bootstrap.php';
+
+namespace App\Config;
+
+require __DIR__ . DIRECTORY_SEPARATOR . 'paths.php';
+
+require PANDA . 'bootstrap.php';
+
+use Panda\Http\Request;
+
+$request = Request::createInstance();
+echo '<pre>' . print_r($request, 1) . '</pre>';

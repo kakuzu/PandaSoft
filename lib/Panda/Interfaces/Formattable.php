@@ -19,7 +19,7 @@
 namespace Panda\Interfaces;
 
 /**
- * Bietet eine Funktion zum Konvertiren von Klassenobjecten in String Format
+ * Bietet eine Funktion zum Konvertiren von Klassenobjecten in String Format.
  *
  * @version ::VERSION::
  * @package   Panda.Interfaces
@@ -27,7 +27,7 @@ namespace Panda\Interfaces;
 interface Formattable {
 
     /**
-     * Formatirt ein Klassen Object zu einem
+     * Formatiert ein Klassen Object zu einem.
      */
     function toString();
 
