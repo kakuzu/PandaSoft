@@ -108,7 +108,8 @@ class Request {
 
     public function __construct($method = null, $protocol = null, $host = null, $port = null, $path = null, array $headers = array(), array $params = array(), array $cookies = array(), array $session = array())
     {
-        $this->setMethod($method)
+        $this
+            ->setMethod($method)
             ->setProtocol($protocol)
             ->setHost($host)
             ->setPort($port)
